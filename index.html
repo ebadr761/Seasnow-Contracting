@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasnow General Contracting | Electrical & Civil Experts UAE</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0a2540; /* Dark Corporate Blue */
+            --accent: #f4b41a;  /* Safety Yellow */
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: var(--primary);
+            padding: 1rem 0;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: white !important;
+            text-transform: uppercase;
+        }
+        .nav-link {
+            color: rgba(255,255,255,0.8) !important;
+            margin-left: 15px;
+            transition: 0.3s;
+        }
+        .nav-link:hover {
+            color: var(--accent) !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(10, 37, 64, 0.85), rgba(10, 37, 64, 0.85)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 90vh; /* 90% of screen height */
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        .btn-custom {
+            background-color: var(--accent);
+            color: #000;
+            font-weight: bold;
+            padding: 12px 30px;
+            border-radius: 0; /* Square edges look more industrial */
+            text-transform: uppercase;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #d49a0e;
+            color: #000;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Service Cards */
+        .service-card {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            height: 100%;
+            border-bottom: 4px solid transparent;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 4px solid var(--accent);
+        }
+        .icon-box {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Seasnow <span style="color:var(--accent)">Contracting</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4" data-aos="fade-up">Powering the Future of the UAE</h1>
+            <p class="lead mb-5" data-aos="fade-up" data-aos-delay="100">
+                Electrical | Instrumentation | Civil | Manpower Supply<br>
+                Trusted by vendors across the Emirates.
+            </p>
+            <a href="contact.html" class="btn btn-custom btn-lg" data-aos="fade-up" data-aos-delay="200">Get a Quote</a>
+        </div>
+    </header>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <i class="fas fa-users fa-2x mb-2 text-muted"></i>
+                    <h5 class="fw-bold">35+ Skilled Experts</h5>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-certificate fa-2x mb-2 text-muted"></i>
+                    <h5 class="fw-bold">Certified Quality</h5>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-clock fa-2x mb-2 text-muted"></i>
+                    <h5 class="fw-bold">On-Time Delivery</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-primary fw-bold text-uppercase">What We Do</h6>
+                <h2 class="fw-bold">Our Core Expertise</h2>
+                <div style="width: 60px; height: 3px; background: var(--accent); margin: 20px auto;"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card service-card p-4">
+                        <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                        <h4>Electrical Works</h4>
+                        <p class="text-muted">High & Medium Voltage Cabling, Switch Gear Installation, and comprehensive substation construction.</p>
+                        <a href="services.html" class="text-decoration-none fw-bold" style="color:var(--primary)">View Details &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card p-4">
+                        <div class="icon-box"><i class="fas fa-solar-panel"></i></div>
+                        <h4>Green Energy & Tech</h4>
+                        <p class="text-muted">Solar panel installation, EV Charger setup, and advanced traffic signal instrumentation.</p>
+                        <a href="services.html" class="text-decoration-none fw-bold" style="color:var(--primary)">View Details &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card p-4">
+                        <div class="icon-box"><i class="fas fa-hard-hat"></i></div>
+                        <h4>Civil & Manpower</h4>
+                        <p class="text-muted">Interlock, kerbstone fixing, and reliable manpower supply for large-scale vendor projects.</p>
+                        <a href="services.html" class="text-decoration-none fw-bold" style="color:var(--primary)">View Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">Seasnow General Contracting L.L.C. &copy; 2024</p>
+            <small class="text-muted">Designed for Excellence in the UAE</small>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/971500000000" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            once: true      // Animation only happens once (while scrolling down)
+        });
+    </script>
+</body>
+</html>

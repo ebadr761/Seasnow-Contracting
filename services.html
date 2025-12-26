@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Seasnow General Contracting</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0a2540;
+            --accent: #f4b41a;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--light-bg);
+            padding-top: 76px; /* Offset for fixed navbar */
+        }
+
+        /* Navbar (Identical to Home) */
+        .navbar {
+            background-color: var(--primary);
+            padding: 1rem 0;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: white !important;
+            text-transform: uppercase;
+        }
+        .nav-link {
+            color: rgba(255,255,255,0.8) !important;
+            margin-left: 15px;
+            transition: 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent) !important;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(10, 37, 64, 0.9), rgba(10, 37, 64, 0.9)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 0;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Service Section Styling */
+        .service-category {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent);
+        }
+
+        .service-category h2 {
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .service-list li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: start;
+        }
+        
+        .service-list li i {
+            color: var(--accent);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        /* Sidebar CTA */
+        .cta-box {
+            background: var(--primary);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            position: sticky;
+            top: 100px; /* Sticks as you scroll */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Seasnow <span style="color:var(--accent)">Contracting</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container" data-aos="fade-down">
+            <h1>Our Capabilities</h1>
+            <p class="lead">Comprehensive industrial solutions across the UAE</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-8">
+                
+                <div class="service-category" data-aos="fade-up">
+                    <h2><i class="fas fa-bolt me-2"></i> Electrical & Instrumentation</h2>
+                    <p class="text-muted mb-4">We specialize in complete electrical infrastructure for industrial and commercial projects. Our team handles everything from high-voltage transmission to delicate instrumentation.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled service-list">
+                                <li><i class="fas fa-check-circle"></i> High, Medium & Low Voltage Cabling</li>
+                                <li><i class="fas fa-check-circle"></i> Cable Pulling & Laying</li>
+                                <li><i class="fas fa-check-circle"></i> Glanding & Termination</li>
+                                <li><i class="fas fa-check-circle"></i> Panel Installation</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled service-list">
+                                <li><i class="fas fa-check-circle"></i> Switch Gear Installation</li>
+                                <li><i class="fas fa-check-circle"></i> Substation Construction</li>
+                                <li><i class="fas fa-check-circle"></i> Industrial Instrumentation</li>
+                                <li><i class="fas fa-check-circle"></i> Maintenance & Troubleshooting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category" data-aos="fade-up">
+                    <h2><i class="fas fa-leaf me-2"></i> Sustainable Energy & Tech</h2>
+                    <p class="text-muted mb-4">Supporting the UAE's vision for a greener future with cutting-edge installation services.</p>
+                    <ul class="list-unstyled service-list">
+                        <li><i class="fas fa-solar-panel"></i> <strong>Solar Panel Installation:</strong> Complete setup for commercial and residential units.</li>
+                        <li><i class="fas fa-charging-station"></i> <strong>EV Charger Installation:</strong> Infrastructure for electric vehicles.</li>
+                        <li><i class="fas fa-traffic-light"></i> <strong>Traffic Signal Installation:</strong> Civil and electrical setup for road safety systems.</li>
+                        <li><i class="fas fa-video"></i> <strong>CCTV & Security:</strong> Camera installation and wiring for site security.</li>
+                    </ul>
+                </div>
+
+                <div class="service-category" data-aos="fade-up">
+                    <h2><i class="fas fa-hard-hat me-2"></i> Civil Works & Manpower</h2>
+                    <p class="text-muted mb-4">We provide the foundation and the workforce to keep your projects moving.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="fw-bold mb-3">Civil Works</h5>
+                            <ul class="list-unstyled service-list">
+                                <li><i class="fas fa-hammer"></i> Interlock & Kerbstone Fixing</li>
+                                <li><i class="fas fa-hammer"></i> Carpentry & Aluminum Work</li>
+                                <li><i class="fas fa-hammer"></i> Painting (White Wash)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="fw-bold mb-3">Manpower Supply</h5>
+                            <ul class="list-unstyled service-list">
+                                <li><i class="fas fa-users"></i> 35+ Skilled Employees</li>
+                                <li><i class="fas fa-users"></i> Supply to Major Vendors</li>
+                                <li><i class="fas fa-users"></i> Flexible Contract Staffing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+                <div class="cta-box" data-aos="fade-left">
+                    <h3><i class="fas fa-file-invoice me-2"></i> Get a Quote</h3>
+                    <p>Have a project in mind? Contact us today for a consultation or a detailed quotation.</p>
+                    <hr style="border-color: rgba(255,255,255,0.3);">
+                    <div class="mb-3">
+                        <small class="d-block text-white-50">Email Us:</small>
+                        <a href="mailto:seasnowgeneralcontracting.llc@gmail.com" class="text-white fw-bold">seasnowgeneralcontracting.llc@gmail.com</a>
+                    </div>
+                    <div class="mb-4">
+                        <small class="d-block text-white-50">Location:</small>
+                        <span class="fw-bold">United Arab Emirates</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-light w-100 fw-bold" style="color:var(--primary)">Contact Page</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">Seasnow General Contracting L.L.C. &copy; 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>
