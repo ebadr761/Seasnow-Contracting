@@ -200,7 +200,13 @@
 
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-0">Seasnow General Contracting L.L.C. &copy; 2026</p>
+            <p class="mb-0">
+                Seasnow General Contracting L.L.C. &copy; <span id="year"></span>
+            </p>
+
+            <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
             <small class="text-muted">Designed for Excellence in the UAE</small>
         </div>
     </footer>
