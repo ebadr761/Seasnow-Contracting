@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seasnow General Contracting | Electrical & Civil Experts UAE</title>
+    <title>سيسنو للمقاولات العامة | خبراء الكهرباء والإنشاءات في الإمارات</title>
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --primary: #0a2540; /* Dark Corporate Blue */
-            --accent: #f4b41a;  /* Safety Yellow */
+            --primary: #0a2540; 
+            --accent: #f4b41a; 
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, sans-serif;
+            /* Applied the Arabic font here */
+            font-family: 'Tajawal', sans-serif;
             overflow-x: hidden;
         }
 
         /* Navbar Styling */
         .navbar {
-            top: 0; /* Change this if you want the top bar to scroll away */
-            position: sticky; /* Keeps navbar visible */
+            top: 0; 
+            position: sticky; 
             z-index: 1000;
         }
         .navbar-brand {
-            font-weight: bold;
+            font-weight: 800; /* Bolder for Arabic */
             color: white !important;
             text-transform: uppercase;
         }
         .nav-link {
             color: rgba(255,255,255,0.8) !important;
-            margin-left: 15px;
+            margin-left: 15px; /* In RTL, margins flip automatically mostly, but visual adjustments happen here */
             transition: 0.3s;
+            font-weight: 700;
         }
         .nav-link:hover {
             color: var(--accent) !important;
@@ -47,7 +52,7 @@
             background: linear-gradient(rgba(10, 37, 64, 0.85), rgba(10, 37, 64, 0.85)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
-            height: 90vh; /* 90% of screen height */
+            height: 90vh; 
             display: flex;
             align-items: center;
             color: white;
@@ -58,7 +63,7 @@
             color: #000;
             font-weight: bold;
             padding: 12px 30px;
-            border-radius: 0; /* Square edges look more industrial */
+            border-radius: 0; 
             text-transform: uppercase;
             border: none;
         }
@@ -67,13 +72,13 @@
             color: #000;
         }
 
-        /* Floating WhatsApp Button */
+        /* Floating WhatsApp Button (Position moves to Left for Arabic usually, or stays right. Left is better for thumb access in RTL) */
         .whatsapp-float {
             position: fixed;
             width: 60px;
             height: 60px;
             bottom: 40px;
-            right: 40px;
+            left: 40px; /* Changed to LEFT for RTL layout preference */
             background-color: #25d366;
             color: #FFF;
             border-radius: 50px;
@@ -112,35 +117,38 @@
     </style>
 </head>
 <body>
+    
     <div class="top-bar py-2" style="background-color: #f4f4f4; border-bottom: 1px solid #ddd; font-size: 0.9rem;">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="top-info">
-                <span class="me-3"><i class="fas fa-envelope me-1" style="color:var(--accent)"></i> seasnowgeneralcontracting.llc@gmail.com</span>
-                <span><i class="fas fa-phone-alt me-1" style="color:var(--accent)"></i> +971 50 000 0000</span>
+                <span class="ms-3"><i class="fas fa-envelope ms-1" style="color:var(--accent)"></i> seasnowgeneralcontracting.llc@gmail.com</span>
+                <span><i class="fas fa-phone-alt ms-1" style="color:var(--accent)"></i> +971 50 000 0000</span>
             </div>
             
             <div class="top-socials d-none d-md-block">
-                <a href="#" class="me-2 text-dark"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="me-2 text-dark"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="me-2 text-dark"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="ms-2 text-dark"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="ms-2 text-dark"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="ms-2 text-dark"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </div>
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Seasnow <span style="color:var(--accent)">Contracting</span></a>
+            <a class="navbar-brand" href="#">سيسنو <span style="color:var(--accent)">للمقاولات</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index-ar.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">خدماتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">مشاريعنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                    
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="index-ar.html" style="color:var(--accent) !important;">
-                            عربي <i class="fas fa-globe"></i>
+                        <a class="nav-link fw-bold" href="index.html" style="color:var(--accent) !important;">
+                            English <i class="fas fa-globe"></i>
                         </a>
                     </li>
                 </ul>
@@ -150,12 +158,12 @@
 
     <header class="hero-section text-center">
         <div class="container">
-            <h1 class="display-3 fw-bold mb-4" data-aos="fade-up">Powering the Future of the UAE</h1>
+            <h1 class="display-3 fw-bold mb-4" data-aos="fade-up">نبني مستقبل الإمارات</h1>
             <p class="lead mb-5" data-aos="fade-up" data-aos-delay="100">
-                Electrical | Instrumentation | Civil | Manpower Supply<br>
-                Trusted by vendors across the Emirates.
+                أعمال كهربائية | أجهزة دقيقة | إنشاءات مدنية | توريد عمالة<br>
+                شريك موثوق للموردين في جميع أنحاء الدولة
             </p>
-            <a href="contact.html" class="btn btn-custom btn-lg" data-aos="fade-up" data-aos-delay="200">Get a Quote</a>
+            <a href="contact.html" class="btn btn-custom btn-lg" data-aos="fade-up" data-aos-delay="200">اطلب عرض سعر</a>
         </div>
     </header>
 
@@ -164,15 +172,15 @@
             <div class="row text-center">
                 <div class="col-md-4 mb-3" data-aos="fade-up">
                     <i class="fas fa-users fa-2x mb-2 text-muted"></i>
-                    <h5 class="fw-bold">35+ Skilled Experts</h5>
+                    <h5 class="fw-bold">+35 خبير محترف</h5>
                 </div>
                 <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="100">
                     <i class="fas fa-certificate fa-2x mb-2 text-muted"></i>
-                    <h5 class="fw-bold">Certified Quality</h5>
+                    <h5 class="fw-bold">جودة معتمدة</h5>
                 </div>
                 <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-clock fa-2x mb-2 text-muted"></i>
-                    <h5 class="fw-bold">On-Time Delivery</h5>
+                    <h5 class="fw-bold">تسليم في الموعد</h5>
                 </div>
             </div>
         </div>
@@ -181,8 +189,8 @@
     <section class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h6 class="text-primary fw-bold text-uppercase">What We Do</h6>
-                <h2 class="fw-bold">Our Core Expertise</h2>
+                <h6 class="text-primary fw-bold text-uppercase">ماذا نقدم</h6>
+                <h2 class="fw-bold">خبراتنا الأساسية</h2>
                 <div style="width: 60px; height: 3px; background: var(--accent); margin: 20px auto;"></div>
             </div>
 
@@ -190,27 +198,27 @@
                 <div class="col-md-4" data-aos="fade-up">
                     <div class="card service-card p-4">
                         <div class="icon-box"><i class="fas fa-bolt"></i></div>
-                        <h4>Electrical Works</h4>
-                        <p class="text-muted">High & Medium Voltage Cabling, Switch Gear Installation, and comprehensive substation construction.</p>
-                        <a href="services.html" class="text-decoration-none fw-bold" style="color:var(--primary)">View Details &rarr;</a>
+                        <h4>الأعمال الكهربائية</h4>
+                        <p class="text-muted">كابلات الضغط العالي والمتوسط، تركيب المفاتيح الكهربائية، وإنشاء المحطات الفرعية المتكاملة.</p>
+                        <a href="services.html" class="text-decoration-none fw-bold" style="color:var(--primary)">عرض التفاصيل &larr;</a>
                     </div>
                 </div>
 
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card service-card p-4">
                         <div class="icon-box"><i class="fas fa-solar-panel"></i></div>
-                        <h4>Green Energy & Tech</h4>
-                        <p class="text-muted">Solar panel installation, EV Charger setup, and advanced traffic signal instrumentation.</p>
-                        <a href="services.html" class="text-decoration-none fw-bold" style="color:var(--primary)">View Details &rarr;</a>
+                        <h4>الطاقة الخضراء والتكنولوجيا</h4>
+                        <p class="text-muted">تركيب الألواح الشمسية، شواحن السيارات الكهربائية، وأنظمة إشارات المرور المتطورة.</p>
+                        <a href="services.html" class="text-decoration-none fw-bold" style="color:var(--primary)">عرض التفاصيل &larr;</a>
                     </div>
                 </div>
 
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card service-card p-4">
                         <div class="icon-box"><i class="fas fa-hard-hat"></i></div>
-                        <h4>Civil & Manpower</h4>
-                        <p class="text-muted">Interlock, kerbstone fixing, and reliable manpower supply for large-scale vendor projects.</p>
-                        <a href="services.html" class="text-decoration-none fw-bold" style="color:var(--primary)">View Details &rarr;</a>
+                        <h4>الأعمال المدنية والعمالة</h4>
+                        <p class="text-muted">تركيب الإنترلوك والكربستون، وتوفير عمالة فنية ماهرة للمشاريع الكبرى.</p>
+                        <a href="services.html" class="text-decoration-none fw-bold" style="color:var(--primary)">عرض التفاصيل &larr;</a>
                     </div>
                 </div>
             </div>
@@ -220,13 +228,14 @@
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
             <p class="mb-0">
-                Seasnow General Contracting L.L.C. &copy; <span id="year"></span>
+                سيسنو للمقاولات العامة ذ.م.م &copy; <span id="year"></span>
             </p>
 
             <script>
+                // This converts the numbers to English numerals (standard in UAE business)
                 document.getElementById("year").innerHTML = new Date().getFullYear();
             </script>
-            <small class="text-muted">Designed for Excellence in the UAE</small>
+            <small class="text-muted">مصممة للتميز في الإمارات العربية المتحدة</small>
         </div>
     </footer>
 
@@ -238,8 +247,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 1000, // Animation duration in milliseconds
-            once: true      // Animation only happens once (while scrolling down)
+            duration: 1000, 
+            once: true      
         });
     </script>
 </body>
