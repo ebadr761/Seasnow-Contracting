@@ -1,0 +1,28 @@
+/* Arabic Language Specific Styles (RTL) */
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* RTL-specific navbar spacing */
+.navbar-brand {
+    font-weight: 800;
+}
+
+/* Services Page - RTL border and icon spacing */
+.service-category {
+    border-right: 5px solid var(--accent);
+}
+
+.service-list li i {
+    margin-left: 15px;
+}
+
+/* Services Page - RTL icon spacing */
+.service-category h2 i {
+    margin-left: 8px;
+}
+
+.cta-box h3 i {
+    margin-left: 8px;
+}

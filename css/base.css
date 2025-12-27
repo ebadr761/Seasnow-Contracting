@@ -1,0 +1,241 @@
+/* Seasnow General Contracting - Base Styles */
+
+:root {
+    --primary: #0a2540;
+    --accent: #f4b41a;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    background-color: var(--light-bg);
+    padding-top: 76px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: white !important;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.8) !important;
+    margin-left: 15px;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent) !important;
+}
+
+/* Page Headers */
+.contact-header,
+.project-header {
+    background: var(--primary);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-header {
+    background: linear-gradient(rgba(10, 37, 64, 0.9), rgba(10, 37, 64, 0.9)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Contact Page - Info Cards */
+.info-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.info-icon {
+    background: var(--accent);
+    color: var(--primary);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0 auto 20px;
+}
+
+/* Contact Page - Form Styling */
+.contact-form-wrapper {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.form-control {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: none;
+}
+
+.btn-submit {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 30px;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0d3a63;
+}
+
+/* Contact Page - Map Container */
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Services Page - Service Categories */
+.service-category {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.service-category h2 {
+    color: var(--primary);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service-list li {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: start;
+}
+
+.service-list li i {
+    color: var(--accent);
+    margin-top: 5px;
+}
+
+/* Services Page - CTA Box */
+.cta-box {
+    background: var(--primary);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    position: sticky;
+    top: 100px;
+}
+
+/* Projects Page - Gallery Styling */
+.project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-item:hover img {
+    transform: scale(1.1);
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(10, 37, 64, 0.9), transparent);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+.project-info h5 {
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 5px;
+    transform: translateY(20px);
+    transition: 0.3s;
+}
+
+.project-info p {
+    color: white;
+    font-size: 0.9rem;
+    transform: translateY(20px);
+    transition: 0.3s delay 0.1s;
+    opacity: 0;
+}
+
+.project-item:hover .project-info h5,
+.project-item:hover .project-info p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Projects Page - CTA Strip */
+.cta-strip {
+    background-color: var(--accent);
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.cta-strip h3 {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+}
