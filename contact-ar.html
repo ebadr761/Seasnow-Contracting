@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | سيسنو للمقاولات العامة</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0a2540;
+            --accent: #f4b41a;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif; /* Arabic Font */
+            background-color: var(--light-bg);
+            padding-top: 76px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--primary);
+            padding: 1rem 0;
+        }
+        .navbar-brand {
+            font-weight: 800;
+            color: white !important;
+            text-transform: uppercase;
+        }
+        .nav-link {
+            color: rgba(255,255,255,0.8) !important;
+            margin-left: 15px;
+            transition: 0.3s;
+            font-weight: 700;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent) !important;
+        }
+
+        /* Page Header */
+        .contact-header {
+            background: var(--primary);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        /* Info Cards */
+        .info-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            height: 100%;
+            transition: 0.3s;
+        }
+        .info-box:hover {
+            transform: translateY(-5px);
+        }
+        .info-icon {
+            background: var(--accent);
+            color: var(--primary);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin: 0 auto 20px;
+        }
+
+        /* Form Styling */
+        .contact-form-wrapper {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .form-control {
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: none;
+        }
+        .btn-submit {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            font-weight: bold;
+            border: none;
+            width: 100%;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #0d3a63;
+        }
+
+        /* Map Container */
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index-ar.html">سيسنو <span style="color:var(--accent)">للمقاولات</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index-ar.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services-ar.html">خدماتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects-ar.html">مشاريعنا</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact-ar.html">اتصل بنا</a></li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="contact.html" style="color:var(--accent) !important;">
+                            English <i class="fas fa-globe"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="contact-header">
+        <div class="container" data-aos="fade-down">
+            <h1>تواصل معنا</h1>
+            <p class="lead mb-0">نحن مستعدون لمساعدتك في مشروعك القادم.</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="info-box">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h4>اتصل بنا</h4>
+                        <p class="text-muted">متاحون للرد على الاستفسارات</p>
+                        <a href="tel:+923008256890" class="text-decoration-none fw-bold text-dark">+92 300 8256890</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info-box">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <h4>راسلنا</h4>
+                        <p class="text-muted">أرسل لنا متطلبات مشروعك</p>
+                        <a href="mailto:seasnowgeneralcontracting.llc@gmail.com" class="text-decoration-none fw-bold text-dark" style="font-size:0.9rem;">seasnowgeneralcontracting.llc@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info-box">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4>الموقع</h4>
+                        <p class="text-muted">الإمارات العربية المتحدة</p>
+                        <span class="fw-bold text-dark">دبي / أبوظبي</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-5">
+                
+                <div class="col-lg-6" data-aos="fade-left"> <div class="contact-form-wrapper">
+                        <h3 class="fw-bold mb-4">أرسل رسالة</h3>
+                        
+                        <form action="https://formsubmit.co/seasnowgeneralcontracting.llc@gmail.com" method="POST">
+                            
+                            <input type="hidden" name="_subject" value="New Website Inquiry! (Arabic)">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://yourwebsite.com/contact-ar.html">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="الاسم" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="البريد الإلكتروني" required>
+                                </div>
+                            </div>
+                            
+                            <input type="text" name="phone" class="form-control" placeholder="رقم الهاتف">
+                            <input type="text" name="subject" class="form-control" placeholder="الموضوع (مثال: طلب عرض سعر كابلات)" required>
+                            
+                            <textarea name="message" rows="5" class="form-control" placeholder="أخبرنا المزيد عن مشروعك..." required></textarea>
+                            
+                            <button type="submit" class="btn btn-submit">إرسال الرسالة</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232565.9944169467!2d54.393809719975984!3d24.386741410358272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7cc2e9341971108!2sAbu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sca!4v1766789288246!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">
+                سيسنو للمقاولات العامة ذ.م.م &copy; <span id="year"></span>
+            </p>
+
+            <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>

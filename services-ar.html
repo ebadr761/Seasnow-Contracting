@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا | سيسنو للمقاولات العامة</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0a2540;
+            --accent: #f4b41a;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif; /* Arabic Font */
+            background-color: var(--light-bg);
+            padding-top: 76px; 
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--primary);
+            padding: 1rem 0;
+        }
+        .navbar-brand {
+            font-weight: 800;
+            color: white !important;
+            text-transform: uppercase;
+        }
+        .nav-link {
+            color: rgba(255,255,255,0.8) !important;
+            margin-left: 15px;
+            transition: 0.3s;
+            font-weight: 700;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent) !important;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(10, 37, 64, 0.9), rgba(10, 37, 64, 0.9)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 0;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Service Section Styling */
+        .service-category {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            /* FLIPPED: Border is now on the Right for RTL */
+            border-right: 5px solid var(--accent); 
+        }
+
+        .service-category h2 {
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .service-list li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: start;
+        }
+        
+        .service-list li i {
+            color: var(--accent);
+            /* FLIPPED: Margin left instead of right so icon has space from text */
+            margin-left: 15px; 
+            margin-top: 5px;
+        }
+
+        /* Sidebar CTA */
+        .cta-box {
+            background: var(--primary);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            position: sticky;
+            top: 100px; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index-ar.html">سيسنو <span style="color:var(--accent)">للمقاولات</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index-ar.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services-ar.html">خدماتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">مشاريعنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="services.html" style="color:var(--accent) !important;">
+                            English <i class="fas fa-globe"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container" data-aos="fade-down">
+            <h1>قدراتنا وخدماتنا</h1>
+            <p class="lead">حلول صناعية شاملة في جميع أنحاء الإمارات العربية المتحدة</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-8">
+                
+                <div class="service-category" data-aos="fade-up">
+                    <h2><i class="fas fa-bolt ms-2"></i> الأعمال الكهربائية والأجهزة الدقيقة</h2>
+                    <p class="text-muted mb-4">نحن متخصصون في البنية التحتية الكهربائية المتكاملة للمشاريع الصناعية والتجارية. يتولى فريقنا كل شيء بدءاً من نقل الجهد العالي وحتى الأجهزة الدقيقة.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled service-list">
+                                <li><i class="fas fa-check-circle"></i> كابلات الجهد العالي والمتوسط والمنخفض</li>
+                                <li><i class="fas fa-check-circle"></i> سحب وتمديد الكابلات</li>
+                                <li><i class="fas fa-check-circle"></i> أعمال الجلاندات والترمينال (Glanding & Termination)</li>
+                                <li><i class="fas fa-check-circle"></i> تركيب اللوحات الكهربائية</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled service-list">
+                                <li><i class="fas fa-check-circle"></i> تركيب المفاتيح الكهربائية (Switch Gear)</li>
+                                <li><i class="fas fa-check-circle"></i> إنشاء المحطات الفرعية (Substations)</li>
+                                <li><i class="fas fa-check-circle"></i> الأجهزة الصناعية الدقيقة (Instrumentation)</li>
+                                <li><i class="fas fa-check-circle"></i> الصيانة واستكشاف الأعطال</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category" data-aos="fade-up">
+                    <h2><i class="fas fa-leaf ms-2"></i> الطاقة المستدامة والتكنولوجيا</h2>
+                    <p class="text-muted mb-4">ندعم رؤية الإمارات لمستقبل أكثر خضرة من خلال خدمات التركيب المتطورة.</p>
+                    <ul class="list-unstyled service-list">
+                        <li><i class="fas fa-solar-panel"></i> <strong>تركيب الألواح الشمسية:</strong> إعداد كامل للوحدات التجارية والسكنية.</li>
+                        <li><i class="fas fa-charging-station"></i> <strong>تركيب شواحن السيارات الكهربائية:</strong> البنية التحتية للمركبات الكهربائية (EV).</li>
+                        <li><i class="fas fa-traffic-light"></i> <strong>تركيب إشارات المرور:</strong> التجهيز المدني والكهربائي لأنظمة سلامة الطرق.</li>
+                        <li><i class="fas fa-video"></i> <strong>كاميرات المراقبة والأمن:</strong> تركيب الكاميرات والأسلاك لأمن المواقع.</li>
+                    </ul>
+                </div>
+
+                <div class="service-category" data-aos="fade-up">
+                    <h2><i class="fas fa-hard-hat ms-2"></i> الأعمال المدنية وتوريد العمالة</h2>
+                    <p class="text-muted mb-4">نوفر الأساسات والقوى العاملة اللازمة للحفاظ على استمرارية مشاريعك.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="fw-bold mb-3">الأعمال المدنية</h5>
+                            <ul class="list-unstyled service-list">
+                                <li><i class="fas fa-hammer"></i> تركيب الإنترلوك والكربستون</li>
+                                <li><i class="fas fa-hammer"></i> النجارة وأعمال الألمنيوم</li>
+                                <li><i class="fas fa-hammer"></i> أعمال الأصباغ (White Wash)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="fw-bold mb-3">توريد العمالة</h5>
+                            <ul class="list-unstyled service-list">
+                                <li><i class="fas fa-users"></i> +35 موظف ماهر</li>
+                                <li><i class="fas fa-users"></i> التوريد للموردين الرئيسيين</li>
+                                <li><i class="fas fa-users"></i> عقود توظيف مرنة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+                <div class="cta-box" data-aos="fade-left">
+                    <h3><i class="fas fa-file-invoice ms-2"></i> اطلب عرض سعر</h3>
+                    <p>هل لديك مشروع؟ تواصل معنا اليوم للحصول على استشارة أو عرض أسعار مفصل.</p>
+                    <hr style="border-color: rgba(255,255,255,0.3);">
+                    <div class="mb-3">
+                        <small class="d-block text-white-50">البريد الإلكتروني:</small>
+                        <a href="mailto:seasnowgeneralcontracting.llc@gmail.com" class="text-white fw-bold">seasnowgeneralcontracting.llc@gmail.com</a>
+                    </div>
+                    <div class="mb-4">
+                        <small class="d-block text-white-50">الموقع:</small>
+                        <span class="fw-bold">الإمارات العربية المتحدة</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-light w-100 fw-bold" style="color:var(--primary)">صفحة التواصل</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">
+                سيسنو للمقاولات العامة ذ.م.م &copy; <span id="year"></span>
+            </p>
+
+            <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>
