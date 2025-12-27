@@ -21,25 +21,25 @@
         }
 
         body {
-            /* Applied the Arabic font here */
             font-family: 'Tajawal', sans-serif;
             overflow-x: hidden;
+            padding-top: 76px; /* Push content down so it doesn't hide behind fixed navbar */
         }
 
         /* Navbar Styling */
         .navbar {
-            top: 0; 
-            position: sticky; 
-            z-index: 1000;
+            background-color: var(--primary);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .navbar-brand {
-            font-weight: 800; /* Bolder for Arabic */
+            font-weight: 800;
             color: white !important;
             text-transform: uppercase;
         }
         .nav-link {
             color: rgba(255,255,255,0.8) !important;
-            margin-left: 15px; /* In RTL, margins flip automatically mostly, but visual adjustments happen here */
+            margin-left: 15px; 
             transition: 0.3s;
             font-weight: 700;
         }
@@ -56,6 +56,7 @@
             display: flex;
             align-items: center;
             color: white;
+            margin-top: -76px; /* Pull hero up to fill behind navbar if you want transparency, otherwise remove this line */
         }
         
         .btn-custom {
@@ -72,13 +73,13 @@
             color: #000;
         }
 
-        /* Floating WhatsApp Button (Position moves to Left for Arabic usually, or stays right. Left is better for thumb access in RTL) */
+        /* Floating WhatsApp Button */
         .whatsapp-float {
             position: fixed;
             width: 60px;
             height: 60px;
             bottom: 40px;
-            left: 40px; /* Changed to LEFT for RTL layout preference */
+            left: 40px; 
             background-color: #25d366;
             color: #FFF;
             border-radius: 50px;
@@ -117,21 +118,6 @@
     </style>
 </head>
 <body>
-    
-    <div class="top-bar py-2" style="background-color: #f4f4f4; border-bottom: 1px solid #ddd; font-size: 0.9rem;">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="top-info">
-                <span class="ms-3"><i class="fas fa-envelope ms-1" style="color:var(--accent)"></i> seasnowgeneralcontracting.llc@gmail.com</span>
-                <span><i class="fas fa-phone-alt ms-1" style="color:var(--accent)"></i> +971 50 000 0000</span>
-            </div>
-            
-            <div class="top-socials d-none d-md-block">
-                <a href="#" class="ms-2 text-dark"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="ms-2 text-dark"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="ms-2 text-dark"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
@@ -230,9 +216,7 @@
             <p class="mb-0">
                 سيسنو للمقاولات العامة ذ.م.م &copy; <span id="year"></span>
             </p>
-
             <script>
-                // This converts the numbers to English numerals (standard in UAE business)
                 document.getElementById("year").innerHTML = new Date().getFullYear();
             </script>
             <small class="text-muted">مصممة للتميز في الإمارات العربية المتحدة</small>
